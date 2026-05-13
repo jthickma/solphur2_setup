@@ -129,6 +129,10 @@ RUN git clone ${COMFYMATH_REPO} custom_nodes/ComfyMath \
     && git checkout ${COMFYMATH_SHA} \
     && if [ -f requirements.txt ]; then pip install --no-cache-dir -r requirements.txt; fi
 
+# --- Custom-node pack: Sulphur-2 orchestration nodes -------------------------
+COPY ComfyUI-Sulphur2 /opt/ComfyUI/custom_nodes/ComfyUI-Sulphur2
+RUN pip install --no-cache-dir -r /opt/ComfyUI/custom_nodes/ComfyUI-Sulphur2/requirements.txt
+
 # --- Python libs explicitly pinned to known-good versions for LTX-2.3 --------
 # (ComfyUI-LTXVideo lists these unpinned; we lock them so the build is byte-
 # identical across rebuilds.)

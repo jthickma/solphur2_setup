@@ -1,0 +1,21 @@
+{
+  "1": {
+    "class_type": "Sulphur2Generate",
+    "inputs": {
+      "prompt": "a cinematic close-up of a foggy cobblestone alley at dawn",
+      "negative_prompt": "pc game, console game, video game, cartoon, childish, ugly, low quality, blurry, distorted, watermark, jpeg artifacts, text overlay",
+      "width": 1280,
+      "height": 704,
+      "duration_seconds": 10.0,
+      "fps": 24.0,
+      "mode": "quality",
+      "seed": 42,
+      "randomize_seed": false,
+      "enhance_prompt": true,
+      "filename_prefix": "video/solphur2_one_node"
+    },
+    "_meta": {
+      "title": "Sulphur 2 Generate"
+    }
+  }
+}

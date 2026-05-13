@@ -1,0 +1,2 @@
+# The node pack uses only the ComfyUI runtime and the pinned custom nodes
+# installed by docker/Dockerfile.comfyui.
